@@ -8,7 +8,9 @@ import Tailwind from "../public/assets/skills/tailwind.png";
 import NextJS from "../public/assets/skills/nextjs.png";
 import NodeJs from "../public/assets/skills/node.png";
 import Loopback from "../public/assets/skills/loopback.png";
+import Postgres from "../public/assets/skills/Postgresql.png";
 import Mongo from "../public/assets/skills/mongo.png";
+import MySQL from "../public/assets/skills/mysql.png";
 import Typescript from "../public/assets/skills/typescript.png";
 
 import AWS from "../public/assets/skills/aws.png";
@@ -121,6 +123,26 @@ const Skills = () => {
               </div>
               <div className="m-auto">
                 <Image src={Tailwind} width="64px" height="64px" alt="/" />
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="flex flex-col items-center justify-center">
+                <h3>PostGRES</h3>
+              </div>
+              <div className="m-auto">
+                <Image src={Postgres} width="64px" height="64px" alt="/" />
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="flex flex-col items-center justify-center">
+                <h3>MySQL</h3>
+              </div>
+              <div className="m-auto">
+                <Image src={MySQL} width="64px" height="64px" alt="/" />
               </div>
             </div>
           </div>
