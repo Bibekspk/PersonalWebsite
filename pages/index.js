@@ -1,11 +1,18 @@
 import Head from "next/head";
+import { useEffect } from "react";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Main from "../components/Main";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function Home() {
+  useEffect(()=>{
+    AOS.init();
+  },[])
   return (
     <div>
       <Head>
@@ -20,7 +27,7 @@ export default function Home() {
       {/* <About /> */}
       <Skills />
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 }

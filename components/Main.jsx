@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitch, FaTwitter } from "react-icons/fa";
 import NavLogo from "../public/assets/profilepic.png";
 import { Avatar } from "antd";
 
@@ -72,6 +72,10 @@ const Main = () => {
     <>
       <div
         id="home"
+        data-aos="zoom-in-down"
+          data-aos-once="false"
+          data-aos-duration="1800"
+          data-aos-delay="200"
         className="text-center sm:h-screen grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 sm:mt-[100px] md:mt-[40px]  mt-[100px] px-[20px]"
       >
         <div className="flex items-center justify-center mb-1">
@@ -123,10 +127,52 @@ const Main = () => {
                   <FaLinkedinIn />
                 </div>
               </a>
+              <a
+                     href="https://www.instagram.com/_bibekspk/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaInstagram />
+                    </div>
+                  </a>
+
+                  <a
+                     href="https://twitter.com/iambibeksp7"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaTwitter />
+                    </div>
+                  </a>
               <Link href="/#contact">
               <div className="rounded shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
+              {/* <div className="flex items-center justify-between py-4">
+                  <a
+                     href="https://www.linkedin.com/in/bibek-sapkota-786507211/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaLinkedinIn />
+                    </div>
+                  </a>
+                  <a
+                    href='https://github.com/Bibekspk'
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaGithub />
+                    </div>
+                  </a>
+                  
+                 
+                  
+                </div> */}
             </Link>
               {/* <Link href="/resume">
               <div className="rounded shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">

@@ -19,18 +19,24 @@ const Skills = () => {
   return (
     <div
       id="skills"
+      data-aos="fade-left"
+      data-aos-once="false"
+      data-aos-duration="800"
+      data-aos-delay="200"
       className="w-full container p-2 mx-auto mt-[60px] px-[20px]"
     >
       <div className="mx-auto flex flex-col justify-center">
         <h2 className="py-4">Skills</h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105  ease-in duration-300 hover:cursor-pointer">
+          <div
+            className="p-6 shadow-xl rounded-xl hover:scale-105  ease-in duration-300 hover:cursor-pointer"
+          >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="flex flex-col items-center justify-center">
                 <h3>JavaScript</h3>
               </div>
               <div className="m-auto hover:rotate-[360deg]">
-                <Image  src={Javascript} width="64px" height="64px" alt="/" />
+                <Image src={Javascript} width="64px" height="64px" alt="/" />
               </div>
             </div>
           </div>

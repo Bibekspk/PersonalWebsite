@@ -8,7 +8,12 @@ import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   return (
-    <div id='projects' className='w-full container p-2 mx-auto mt-[60px] px-[20px] mb-[40px] '>
+    <div id='projects'
+    data-aos="fade-right"
+    data-aos-once="false"
+    data-aos-duration="800"
+    data-aos-delay="200"
+    className='w-full container p-2 mx-auto mt-[60px] px-[20px] mb-[40px] '>
       <div >
         <h2 className='py-4'>Projects</h2>
         <div className='grid md:grid-cols-2 gap-8 mt-[30px]'>
