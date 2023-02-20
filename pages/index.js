@@ -14,7 +14,7 @@ export default function Home() {
     AOS.init();
   },[])
   return (
-    <div>
+    <div className="overflow-hidden">
       <Head>
         <title>Bibek | Full Stack Developer</title>
         <meta
