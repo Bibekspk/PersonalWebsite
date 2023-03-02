@@ -95,10 +95,15 @@ const Navbar = ({ setPage }) => {
             </li>
             {/* <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/resume'>Resume</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#contact'>Contact</Link>
             </li> */}
+            <li
+              className="ml-10 text-sm uppercase hover:border-b"
+              onClick={() => {
+                setPage("Contact");
+              }}
+            >
+              Contact
+            </li>
           </ul>
           <div
             style={{ color: `${linkColor}` }}
