@@ -152,41 +152,51 @@ const Navbar = ({ setPage }) => {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link
-                href="/"
+              <li
                 onClick={() => {
                   setPage("Home");
+                  setNav(false);
                 }}
+                className="py-4 text-sm"
               >
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Home
-                </li>
-              </Link>
+                Home
+              </li>
               {/* <Link href='/#about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   About
                 </li>
               </Link> */}
-              <Link
-                href="/#skills"
+
+              <li
                 onClick={() => {
-                  setPage("Home");
+                  setNav(false);
+                  setPage("Skills");
                 }}
+                className="py-4 text-sm"
               >
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Skills
-                </li>
-              </Link>
-              <Link
-                href="/#projects"
+                Skills
+              </li>
+
+              <li
                 onClick={() => {
-                  setPage("Home");
+                  setNav(false);
+                  setPage("Projects");
                 }}
+                className="py-4 text-sm"
               >
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Projects
-                </li>
-              </Link>
+                Projects
+              </li>
+
+              <li
+                onClick={() => {
+                  setNav(false);
+                  setPage("Contact");
+                }}
+                className="py-4 text-sm"
+              >
+                Contact
+              </li>
+
               {/* <Link href='/resume'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Resume

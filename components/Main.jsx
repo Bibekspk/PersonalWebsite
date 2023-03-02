@@ -74,7 +74,7 @@ const Main = () => {
     window.addEventListener("resize", updateDimensions);
 
   return (
-      <div className="shadow-lg text-center sm:h-screen grid grid-cols-1 md:grid-cols-1 sm:mt-[100px] md:mt-[60px]  mt-[100px] px-[20px] w-[95%] mx-auto">
+      <div className="shadow-lg text-center sm:h-screen grid grid-cols-1 md:grid-cols-1 sm:mt-[20px] md:mt-[60px]  mt-[20px] px-[20px] w-[95%] mx-auto">
         <div className="flex items-center justify-center">
           <Image
             src={NavLogo}
