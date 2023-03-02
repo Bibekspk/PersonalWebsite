@@ -3,7 +3,13 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitch, FaTwitter } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitch,
+  FaTwitter,
+} from "react-icons/fa";
 import NavLogo from "../public/assets/profilepic.png";
 import { Avatar } from "antd";
 
@@ -14,15 +20,14 @@ const Main = () => {
 
   const updateDimensions = () => {
     if (innerWidth < 767) {
-      setImgWidth("300px");
+      setImgWidth("170px");
     } else {
-      setImgWidth("425px");
+      setImgWidth("185px");
     }
   };
   useEffect(() => {
     updateDimensions();
   }, []);
-
 
   let name = [
     "A",
@@ -66,19 +71,11 @@ const Main = () => {
   }, [count]);
 
   typeof window !== "undefined" &&
-  window.addEventListener("resize", updateDimensions);
+    window.addEventListener("resize", updateDimensions);
 
   return (
-    <>
-      <div
-        id="home"
-        data-aos="zoom-in-down"
-          data-aos-once="false"
-          data-aos-duration="1800"
-          data-aos-delay="200"
-        className="text-center sm:h-screen grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 sm:mt-[100px] md:mt-[40px]  mt-[100px] px-[20px]"
-      >
-        <div className="flex items-center justify-center mb-1">
+      <div className="shadow-lg text-center sm:h-screen grid grid-cols-1 md:grid-cols-1 sm:mt-[100px] md:mt-[60px]  mt-[100px] px-[20px] w-[95%] mx-auto">
+        <div className="flex items-center justify-center">
           <Image
             src={NavLogo}
             width={imgWidth}
@@ -87,27 +84,17 @@ const Main = () => {
             className="rounded-full"
           />
         </div>
-        <div className="mx-auto p-2 flex justify-center items-center">
+        <div className="mx-auto">
           <div>
-            <h1 className="text-gray-700">
-              I&#39;m <span className="text-[#1285CB]"> Bibek</span>
-            </h1>
-            {Array.isArray(text) && text?.length > 0 ? (
-              <h1 className="py-2 text-black-500 text-center text-3xl">
-                {" "}
-                {text}
-              </h1>
-            ) : (
-              <h1 className="py-2 text-blue-500 text-center text-2xl">""</h1>
-            )}
-
-            <p className="py-2 text-gray-600 sm:max-w-[70%] m-auto">
-              I am a skilled and motivated <strong>Full Stack Developer</strong>{" "}
-              with extensive experience in building web applications using the
-              stacks.
-              <br></br>
+            <p className="py-2 font-roboto text-gray-600 sm:max-w-[89%] m-auto">
+              I am currently working in Supreme IT solutions as a Full Stack
+              Developer. I am working in different CMS and ecommerce sites.
+            </p>
+            <p className="py-2 font-roboto text-gray-600 sm:max-w-[89%] m-auto">
               <strong> Gmail </strong>: bibeksp7@gmail.com
             </p>
+
+            {/* / */}
             <div className="flex items-center justify-around max-w-[330px] m-auto py-4">
               <a
                 href="https://github.com/Bibekspk"
@@ -128,52 +115,29 @@ const Main = () => {
                 </div>
               </a>
               <a
-                     href="https://www.instagram.com/_bibekspk/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="rounded shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaInstagram />
-                    </div>
-                  </a>
+                href="https://www.instagram.com/_bibekspk/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="rounded shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <FaInstagram />
+                </div>
+              </a>
 
-                  <a
-                     href="https://twitter.com/iambibeksp7"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="rounded shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaTwitter />
-                    </div>
-                  </a>
+              <a
+                href="https://twitter.com/iambibeksp7"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="rounded shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <FaTwitter />
+                </div>
+              </a>
               <Link href="/#contact">
-              <div className="rounded shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <AiOutlineMail />
-              </div>
-              {/* <div className="flex items-center justify-between py-4">
-                  <a
-                     href="https://www.linkedin.com/in/bibek-sapkota-786507211/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaLinkedinIn />
-                    </div>
-                  </a>
-                  <a
-                    href='https://github.com/Bibekspk'
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaGithub />
-                    </div>
-                  </a>
-                  
-                 
-                  
-                </div> */}
-            </Link>
+                <div className="rounded shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <AiOutlineMail />
+                </div>
+              </Link>
               {/* <Link href="/resume">
               <div className="rounded shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
@@ -183,7 +147,6 @@ const Main = () => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 

@@ -13,10 +13,10 @@ const Projects = () => {
     data-aos-once="false"
     data-aos-duration="800"
     data-aos-delay="200"
-    className='w-full container p-2 mx-auto mt-[60px] px-[20px] mb-[40px] '>
+    className='w-full container mt-[60px]  mb-[40px] w-[95%] mx-auto'>
       <div >
         <h2 className='py-4'>Projects</h2>
-        <div className='grid md:grid-cols-2 gap-8 mt-[30px]'>
+        <div className='grid grid-cols-1 gap-4 mt-[30px]'>
           <ProjectItem
             title='Salesberry'
             backgroundImg={salesberryImg}
