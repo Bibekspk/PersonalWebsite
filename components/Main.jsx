@@ -20,7 +20,7 @@ const Main = () => {
 
   const updateDimensions = () => {
     if (innerWidth < 767) {
-      setImgWidth("170px");
+      setImgWidth("120px");
     } else {
       setImgWidth("185px");
     }
