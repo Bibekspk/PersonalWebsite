@@ -24,6 +24,22 @@ export default function Home() {
           name="description"
           content="I’m a Full Stack Web developer specializing in building exceptional digital experiences."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <html lang="en" />
+        <meta
+          property="og:title"
+          content="Bibek Sapkota | Full Stack Developer"
+        />
+        <meta
+          property="og:description"
+          content="I’m a Full Stack Web developer specializing in building exceptional digital experiences."
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@iambibeksp7" />
+        <meta property="og:instagram" content="@_bibekspk" />
+        <link rel="canonical" href="https://example.com/" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="robots" content="index, follow" />
       </Head>
       <Navbar setPage={setPage}></Navbar>
       <div className=" xl:order-1 md:order-2  order-2 xl:col-span-1 ">
