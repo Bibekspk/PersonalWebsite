@@ -19,7 +19,9 @@ export default function Home() {
   return (
     <div className="overflow-hidden grid grid-cols-1 xl:grid-cols-3">
       <Head>
-        <title>Bibek | Full Stack Developer</title>
+        <title>
+          Crafting the Future of Web: Bibek Sapkota, Full Stack Developer
+        </title>
         <meta
           name="description"
           content="I’m a Full Stack Web developer specializing in building exceptional digital experiences."
