@@ -58,12 +58,9 @@ const IndexPage = () => {
             I&#39;m <span className="text-[#1285CB]"> Bibek</span>
           </p>
           {Array.isArray(text) && text?.length > 0 ? (
-            <h1 className="py-2 text-black-500 text-center text-3xl">
-              {" "}
-              {text}
-            </h1>
+            <p className="py-2 text-black-500 text-center text-3xl"> {text}</p>
           ) : (
-            <h1 className="py-2 text-blue-500 text-center text-2xl">""</h1>
+            <p className="py-2 text-blue-500 text-center text-2xl">""</p>
           )}
 
           <p className="py-3 text-gray-600 sm:max-w-[89%] m-auto leading-7">

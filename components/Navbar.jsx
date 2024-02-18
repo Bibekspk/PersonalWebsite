@@ -55,17 +55,17 @@ const Navbar = ({ setPage }) => {
       }
     >
       <div className="flex justify-between xl:justify-around 2xl:justify-around md:justify-around lg:justify-around sm:justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/">
-          <a>
-            <Image
-              src={NavLogo}
-              alt="/"
-              width="250px"
-              height="175px"
-              className="cursor-pointer"
-            />
-          </a>
-        </Link>
+        {/* <Link href="/"> */}
+        <a>
+          <Image
+            src={NavLogo}
+            alt="Logo"
+            width="250px"
+            height="175px"
+            className="cursor-pointer"
+          />
+        </a>
+        {/* </Link> */}
         <div className="">
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <li
@@ -134,7 +134,7 @@ const Navbar = ({ setPage }) => {
             <div className="flex w-full items-center justify-between">
               <Link href="/">
                 <a>
-                  <Image src={NavLogo} width="175px" height="75px" alt="/" />
+                  <Image src={NavLogo} width="175px" height="75px" alt="Logo" />
                 </a>
               </Link>
               <div

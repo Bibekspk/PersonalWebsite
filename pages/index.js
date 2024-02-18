@@ -30,9 +30,10 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <html lang="en" />
+        <meta name="content-language" content="en"></meta>
         <meta
           property="og:title"
-          content="Bibek Sapkota | Full Stack Developer"
+          content="Crafting the Future of Web: Bibek Sapkota, Full Stack Developer"
         />
         <meta
           property="og:description"
