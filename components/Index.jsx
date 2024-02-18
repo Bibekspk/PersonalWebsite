@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import AboutImg from "../public/assets/about.jpg";
 
 const IndexPage = () => {
   const [text, setText] = useState([]);
@@ -54,9 +51,9 @@ const IndexPage = () => {
     >
       <div className="mx-auto p-2 flex">
         <div className="mx-auto p-2 justify-center items-center">
-          <p className="text-gray-700 text-4xl font-bold text-center">
+          <h1 className="text-gray-700 text-4xl font-bold text-center">
             I&#39;m <span className="text-[#1285CB]"> Bibek</span>
-          </p>
+          </h1>
           {Array.isArray(text) && text?.length > 0 ? (
             <p className="py-2 text-black-500 text-center text-3xl"> {text}</p>
           ) : (
