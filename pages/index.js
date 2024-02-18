@@ -24,6 +24,10 @@ export default function Home() {
           name="description"
           content="I’m a Full Stack Web developer specializing in building exceptional digital experiences."
         />
+        <meta
+          name="keywords"
+          content="full stack developer, web development, digital experiences, Nepal, Kathmandu,Bibek,Sapkota,sapkota,bibek"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <html lang="en" />
         <meta
@@ -37,7 +41,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@iambibeksp7" />
         <meta property="og:instagram" content="@_bibekspk" />
-        <link rel="canonical" href="https://example.com/" />
+        <link rel="canonical" href="https://sapkotabibek.com.np/" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="robots" content="index, follow" />
       </Head>
