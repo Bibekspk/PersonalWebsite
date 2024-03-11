@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import About from "../components/Index";
 import Contact from "../components/Contact";
 import Main from "../components/Main";
 import Projects from "../components/Projects";
@@ -9,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "../components/Navbar";
 import IndexPage from "../components/Index";
+import Logo from "../public/assets/logo.png";
 
 export default function Home() {
   const [page, setPage] = useState("");
@@ -28,7 +28,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="full stack developer, web development, digital experiences, Nepal, Kathmandu,Bibek,Sapkota,sapkota,bibek"
+          content="fullstack developer, web development, digital experiences,Nepal,Kathmandu,Bibek,Sapkota,sapkota,bibek,Bibek Sapkota,developer,React,node"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <html lang="en" />
@@ -45,7 +45,7 @@ export default function Home() {
         <meta name="twitter:site" content="@iambibeksp7" />
         <meta property="og:instagram" content="@_bibekspk" />
         <link rel="canonical" href="https://sapkotabibek.com.np/" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
         <meta name="robots" content="index, follow" />
       </Head>
       <Navbar setPage={setPage}></Navbar>
