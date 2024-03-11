@@ -45,7 +45,7 @@ export default function Home() {
         <meta name="twitter:site" content="@iambibeksp7" />
         <meta property="og:instagram" content="@_bibekspk" />
         <link rel="canonical" href="https://sapkotabibek.com.np/" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/fav.png" />
         <meta name="robots" content="index, follow" />
       </Head>
       <Navbar setPage={setPage}></Navbar>
