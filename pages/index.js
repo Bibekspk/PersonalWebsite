@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import Navbar from "../components/Navbar";
 import IndexPage from "../components/Index";
 import Logo from "../public/assets/logo.png";
+import Image from "next/image";
 
 export default function Home() {
   const [page, setPage] = useState("");
@@ -28,7 +29,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="fullstack developer, web development, digital experiences,Nepal,Kathmandu,Bibek,Sapkota,sapkota,bibek,Bibek Sapkota,developer,React,node"
+          content="fullstack developer,web development,digital experiences,Nepal,Kathmandu,Bibek,Sapkota,sapkota,bibek,Bibek Sapkota,developer,React,node"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <html lang="en" />
@@ -41,11 +42,11 @@ export default function Home() {
           property="og:description"
           content="I’m a Full Stack Web developer specializing in building exceptional digital experiences."
         />
+        <link href="/favicon/fav.png" rel="icon" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@iambibeksp7" />
         <meta property="og:instagram" content="@_bibekspk" />
         <link rel="canonical" href="https://sapkotabibek.com.np/" />
-        <link rel="icon" href="/fav.png" />
         <meta name="robots" content="index, follow" />
       </Head>
       <Navbar setPage={setPage}></Navbar>
